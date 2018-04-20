@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuprincipal"
+            android:icon="@drawable/menu_principal"
+            android:title="Menú Principal"/>
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/usuario"
+            android:title="Mi Perfil"/>
+        <item
+            android:id="@+id/negocio"
+            android:icon="@drawable/registrodenegocios2"
+            android:title="Registra tu Negocio" />
+    </group>
+    <item android:title="Redes Sociales">
+        <menu>
+            <item
+                android:id="@+id/ayuda"
+                android:icon="@drawable/ayuda"
+                android:title="Ayuda" />
+            <item
+                android:id="@+id/closeSesion"
+                android:icon="@drawable/cerrar_sesion2"
+                android:title="Cerrar Sesión"/>
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/facebook"
+                android:title="Síguenos en Facebook"/>
+            <item
+                android:id="@+id/pagina"
+                android:icon="@drawable/web"
+                android:title="Página Web"/>
+        </menu>
+    </item>
+</menu>

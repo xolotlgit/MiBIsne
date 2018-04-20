@@ -1,0 +1,71 @@
+package com.example.deadshot.elbisne;
+
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.media.RingtoneManager;
+import android.net.Uri;
+import android.support.v4.app.NotificationCompat;
+import android.util.Log;
+
+import com.google.firebase.messaging.FirebaseMessagingService;
+import com.google.firebase.messaging.RemoteMessage;
+
+import java.util.Map;
+
+public class MiFirebaseMessagingService extends FirebaseMessagingService {
+
+    public static final String TAG = "NOTICIAS";
+    public static String typeN,titleN, bodyN, contatoN;
+
+    @Override
+    public void onMessageReceived(RemoteMessage remoteMessage) {
+        super.onMessageReceived(remoteMessage);
+
+        String from = remoteMessage.getFrom();
+        Log.d(TAG, "Mensaje recibido de: " + from);
+
+        if (remoteMessage.getNotification() != null) {
+            Log.d(TAG, "Notificación: " + remoteMessage.getNotification().getBody());
+        }
+
+        if (remoteMessage.getData().size() > 0) {
+            Log.d(TAG, "Data: " + remoteMessage.getData());
+            Log.d("tamaño del remote ", String.valueOf(remoteMessage.getData().size()));
+
+            mostrarNotificacion(
+                    remoteMessage.getData().get("title"),
+                    remoteMessage.getData().get("message"),
+                    remoteMessage.getData().get("type"),
+                    remoteMessage.getData().get("contacto")
+                    );
+        }
+    }
+
+    private void mostrarNotificacion(String title, String body,String type,String contato) {
+
+        typeN = type;
+        titleN = title;
+        bodyN = body;
+        contatoN = contato;
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("datos","notificacion");
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
+
+        Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.ic_event_mibisne)
+                .setContentTitle(title)
+                .setContentText(body)
+                .setAutoCancel(true)
+                .setSound(soundUri)
+                .setContentIntent(pendingIntent);
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(0, notificationBuilder.build());
+
+    }
+}

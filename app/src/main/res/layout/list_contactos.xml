@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#F2F2F0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de contacto"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtNombreContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_action_user"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono de contacto"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTel1Contacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_action_telefono"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:onClick="llamar"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico de contacto"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtCorreoContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/buttosTelF"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLlamarTelCon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="#FF8A80"
+                    android:gravity="center"
+                    android:text="Llamar"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnMensajeTelCon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FF8A80"
+                    android:gravity="center"
+                    android:text="Enviar \n Mensaje"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnCorreoCon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="#FF8A80"
+                    android:gravity="center"
+                    android:text="Enviar \n Correo"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

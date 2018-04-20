@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Mi Bisne</string>
+
+    <string name="facebook_app_id">2065030280487684</string>
+    <string name="fb_login_protocol_scheme">fb2065030280487684</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu">Menu</string>
+    <string name="nombre"></string>
+    <string name="alias"></string>
+    <string name="correo"></string>
+    <string name="direccion"></string>
+    <string name="telefono1"></string>
+    <string name="telefono2"></string>
+    <string name="editDatePersonal">Editar Datos</string>
+    <string name="detaller">Detalles</string>
+    <string name="PerfilUsuario">Perfil del usuario</string>
+    <string name="MisNegocios">Mis Negocios</string>
+    <string name="nombreNego">Cyber \"Eye\"</string>
+    <string name="DescripNego">Un cibercafé Diferente se ofrece a los clientes acceso a internet y servicios de restaurante y cafetería.</string>
+    <string name="title_activity_registrar_negocio">ActivityRegistrarNegocio</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="ContRegistro2">Guardar y Continuar</string>
+    <string name="ViewtxtAyuda">El objetivo de esta aplicacion es ayudarte en la busqueda de negocios y servicios, si requieres ayuda puedes contactar a cualquiera de la siguientes personas.</string>
+    <string name="apellidos"></string>
+    <string name="title_activity_detalles_anuncio">Detalles del Negocio</string>
+    <string name="tituloayuda">El objetivo de esta aplicación es ayudarte en la búsqueda de negocios y servicios, si requieres ayuda puedes contactar a cualquier de las siguientes personas.</string>
+    <string name="enviarmensaje">Enviar \\n Mensaje</string>
+
+</resources>

@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deadshot.elbisne.Tab2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollNegoSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:id="@+id/layoudNegoSocial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico del negocio"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtCorreoNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sitio web del negocio"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtSitioWebNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facebook"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtFacebookNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Twitter"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTwitterNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Instagram"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtInstagramNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Agrega otra red social"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtOtraRedNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="3 Palabras para identificar tu negocio"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTagsNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:maxLength="30"
+                    android:inputType="textCapWords"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA443F"
+    tools:context="com.example.deadshot.elbisne.ActivityInicioSesion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:src="@drawable/logomibisne" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="190dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtNombreEmail"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Correo Electrónico"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_action_email2"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColorHint="#BFBFBF" />
+
+            <EditText
+                android:id="@+id/txtContIniS"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:hint="****************"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_action_paswoord"
+                android:textAlignment="center"
+                android:textColorHint="#BFBFBF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom|end"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="#29AB40"
+                    android:text="Iniciar Sesión" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/signInButton"
+                    android:layout_width="220dp"
+                    android:layout_height="53dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/loginButton"
+                    android:layout_width="210dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="#3D5A98"
+                    android:paddingBottom="19dp"
+                    android:paddingTop="8dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnregistrouser"
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Registrate ahora" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

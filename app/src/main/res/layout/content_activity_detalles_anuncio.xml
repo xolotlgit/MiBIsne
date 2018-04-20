@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.deadshot.elbisne.ActivityDetallesAnuncio">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Contenedor del card card de Negocios-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/linea2"
+                android:padding="16dp">
+
+                <!--Comienza el card de Negocios-->
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/lblNombreNegocio"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textSize="25dp"
+                                        android:text="Nombre del negocio" />
+
+                                </LinearLayout>
+
+                                <!-- Imagen que se cargara -->
+                                <ViewFlipper
+                                    android:id="@+id/viewFlipperImgNegocio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/imageView1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="300dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tiendaabarrotes" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="300dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tiendaabarrotes" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="300dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tiendaabarrotes" />
+                                </ViewFlipper>
+                                <TextView
+                                    android:id="@+id/lblValoracion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textAlignment="center"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:text="" />
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:rating="3.5"
+                                    android:stepSize="0.1"
+                                    android:backgroundTint="#FFD700"
+                                    android:numStars="5"
+                                    android:theme="@style/RatingBar" />
+                                <!-- END Imagen que se cargara -->
+                            </LinearLayout>
+                            <!-- Linear para DEtalles General -->
+                            <LinearLayout
+                                android:id="@+id/btnDetallesGeneralNegocio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@layout/border"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="Datos Generales"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewExpand1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:contentDescription="@string/detaller"
+                                    android:src="@mipmap/more" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ContenedorDetallesGeneral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    android:hint="Descripción del negocio"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblDescripcion"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:cursorVisible="false"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:inputType="textMultiLine"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    android:hint="Nombre de usuario"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblIdUsuario"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:cursorVisible="false"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:inputType="textPersonName"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    android:hint="IdNegocio"
+                                    android:visibility="gone"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblIdNegocio"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:cursorVisible="false"
+                                        android:visibility="gone"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:inputType="textPersonName"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    android:hint="Horarios"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblHorario"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:cursorVisible="false"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:inputType="text"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+                            <!--END Linear para DEtalles General -->
+                            <!-- Linear para DEtalles Contacto-->
+                            <LinearLayout
+                                android:id="@+id/btnDetallesContactoNegocio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@layout/border"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="Datos de Contacto"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewExpand2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:contentDescription="@string/detaller"
+                                    android:src="@mipmap/more" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ContenedorDetallesContacto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    android:hint="Dirección del negocio"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblDireccion"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:cursorVisible="false"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:inputType="textMultiLine"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="7dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ver en Mapa"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:background="#FF735C"
+                                        android:id="@+id/btnVerMapa"/>
+                                </LinearLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Teléfono móvil"
+                                        android:textColorHint="@color/colorPrimary">
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lblTel_M"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:inputType="phone"
+                                            android:maxLength="10"
+                                            android:cursorVisible="false"
+                                            android:enabled="false"
+                                            android:focusable="false"
+                                            android:text=""
+                                            android:textColor="@android:color/black"
+                                            android:textColorHighlight="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:id="@+id/buttosTelM"
+                                    android:layout_marginBottom="7dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Llamar"
+                                        android:gravity="center"
+                                        android:textColor="#525355"
+                                        android:background="#dddddd"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="1dp"
+                                        android:id="@+id/btnLlamarTelM"/>
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Enviar Mensaje"
+                                        android:gravity="center"
+                                        android:textColor="#525355"
+                                        android:background="#dddddd"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="1dp"
+                                        android:id="@+id/btnMensajeTelM"/>
+                                </LinearLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Teléfono fijo"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblTel_F"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:inputType="phone"
+                                        android:maxLength="10"
+                                        android:cursorVisible="false"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:id="@+id/buttosTelF"
+                                    android:layout_marginBottom="7dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Llamar"
+                                        android:gravity="center"
+                                        android:textColor="#525355"
+                                        android:background="#dddddd"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="1dp"
+                                        android:id="@+id/btnLlamarTelF"/>
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Enviar Mensaje"
+                                        android:gravity="center"
+                                        android:textColor="#525355"
+                                        android:background="#dddddd"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="1dp"
+                                        android:id="@+id/btnMensajeTelF"/>
+                                </LinearLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    android:hint="Correo electrónico del negocio"
+                                    android:textColorHint="@color/colorPrimary">
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/lblEmail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:cursorVisible="false"
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:inputType="textEmailAddress"
+                                        android:text=""
+                                        android:textColor="@android:color/black"
+                                        android:textColorHighlight="@color/colorPrimary" />
+                                </android.support.design.widget.TextInputLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:id="@+id/buttoncorreo"
+                                    android:layout_marginBottom="7dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Enviar Correo Electronico"
+                                        android:gravity="center"
+                                        android:textColor="#525355"
+                                        android:background="#dddddd"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="1dp"
+                                        android:id="@+id/btnCorreoElect"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!-- END Linear para DEtalles Contacto-->
+                            <!-- Linear para DEtalles RedesSociales-->
+                            <LinearLayout
+                                android:id="@+id/btnDetallesSocialNegocio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@layout/border"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="Datos de Redes Sociales"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewExpand3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:contentDescription="@string/detaller"
+                                    android:src="@mipmap/more" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ContenedorDetallesSocial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="2dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:id="@+id/contenedorRedSocial"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="1dp"
+                                    android:visibility="visible">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="Sitio Web"
+                                        android:textColorHint="@color/colorPrimary">
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lblSitioWeb"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:cursorVisible="false"
+                                            android:enabled="false"
+                                            android:focusable="false"
+                                            android:inputType="text"
+                                            android:text=""
+                                            android:textColor="@android:color/black"
+                                            android:textColorHighlight="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="Facebook"
+                                        android:textColorHint="@color/colorPrimary">
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lblFacebook"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:cursorVisible="false"
+                                            android:enabled="false"
+                                            android:focusable="false"
+                                            android:inputType="text"
+                                            android:text=""
+                                            android:textColor="@android:color/black"
+                                            android:textColorHighlight="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="Twitter"
+                                        android:textColorHint="@color/colorPrimary">
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lblTwitter"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:cursorVisible="false"
+                                            android:enabled="false"
+                                            android:focusable="false"
+                                            android:inputType="text"
+                                            android:text=""
+                                            android:textColor="@android:color/black"
+                                            android:textColorHighlight="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="Instagram"
+                                        android:textColorHint="@color/colorPrimary">
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lblInstagram"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:cursorVisible="false"
+                                            android:enabled="false"
+                                            android:focusable="false"
+                                            android:inputType="text"
+                                            android:text=""
+                                            android:textColor="@android:color/black"
+                                            android:textColorHighlight="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="Instagram"
+                                        android:textColorHint="@color/colorPrimary">
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lblOtraRed"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:cursorVisible="false"
+                                            android:enabled="false"
+                                            android:focusable="false"
+                                            android:inputType="text"
+                                            android:text=""
+                                            android:textColor="@android:color/black"
+                                            android:textColorHighlight="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                                <!--END los detalles del negocio-->
+                            </LinearLayout>
+                            <!--END Linear para DEtalles RedesSociales-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!--END el card de Negocios-->
+            </LinearLayout>
+            <!--END -Contenedor del card card de Negocios-->
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_action_ticket" />
+</android.support.design.widget.CoordinatorLayout>

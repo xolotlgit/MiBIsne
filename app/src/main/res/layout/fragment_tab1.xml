@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deadshot.elbisne.Tab1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollNegoGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp">
+
+        <LinearLayout
+            android:id="@+id/layoudNegoGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Usuario Activo"
+                android:visibility="gone"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtIdUsuarioNego"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPersonName"
+                    android:visibility="gone"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del negocio"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtNombreNegocio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtDescripcionNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección del negocio"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtDireccionNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Horario de servicio"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtHorarioNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono fijo"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTelFNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono móvil"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTelMNego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/cboxCategoriasNego"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="10sp"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingBottom="@dimen/fab_margin"
+                android:layout_marginTop="6dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

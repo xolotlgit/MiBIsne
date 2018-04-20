@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "454352174040",
+    "firebase_url": "https://el-bisne.firebaseio.com",
+    "project_id": "el-bisne",
+    "storage_bucket": "el-bisne.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454352174040:android:4b190640b8c83efa",
+        "android_client_info": {
+          "package_name": "com.example.deadshot.elbisne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454352174040-ja0ruar9opaeso8gru4tv58obas1fogn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deadshot.elbisne",
+            "certificate_hash": "fd884d42c402665fd846b717b0196c67e9e229c2"
+          }
+        },
+        {
+          "client_id": "454352174040-lfjvsh0k5dmps859agaeqdm46e73pbft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4FJaTVhKFTpwLqHh_x8c2Spo7Q2nh5RI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454352174040-lfjvsh0k5dmps859agaeqdm46e73pbft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

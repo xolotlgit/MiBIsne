@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deadshot.elbisne.Tab3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center"
+        android:id="@+id/scrollNegoSocial">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="Selecciona imagenes para tu negocio"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/contenedorImagenes"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/img1Negocio"
+                    android:layout_width="500px"
+                    android:layout_height="500px"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icongallery" />
+
+                <ImageView
+                    android:id="@+id/img2Negocio"
+                    android:layout_width="500px"
+                    android:layout_height="500px"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icongallery" />
+
+                <ImageView
+                    android:id="@+id/img3Negocio"
+                    android:layout_width="500px"
+                    android:layout_height="500px"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icongallery" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/contenedorUrl"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:hint="Url de la Imagen 1"
+                    android:textColorHint="@color/colorPrimary">
+                    <android.support.design.widget.TextInputEditText
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUrlImg1"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:hint="Url de la Imagen 2"
+                    android:textColorHint="@color/colorPrimary">
+                    <android.support.design.widget.TextInputEditText
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUrlImg2"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:hint="Url de la Imagen 3"
+                    android:textColorHint="@color/colorPrimary">
+                    <android.support.design.widget.TextInputEditText
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUrlImg3"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSaveRegNegociosGeneral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:background="#FF735C"
+                        android:text="@string/ContRegistro2" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textViewError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:inputType="textMultiLine"
+                android:visibility="gone"
+                android:text="TextView"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

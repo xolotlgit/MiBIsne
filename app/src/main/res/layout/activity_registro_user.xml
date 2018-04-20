@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.example.deadshot.elbisne.ActivityRegistroUser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre(s)"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtNombreCompleto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:focusable="auto"
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_nombre"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_apellidos"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de usuario"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtAlias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_user"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono móvil"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_movil"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono fijo"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtTel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_telefono"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección completa"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_direccion"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtCorreoUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:textColorHighlight="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/txtContrasena"
+                    android:drawableLeft="@drawable/ic_action_contrasenaa"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar contraseña"
+                android:textColorHint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/txtContrasenaConf"
+                    android:drawableLeft="@drawable/ic_action_confimcontra"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="71dp"
+                tools:layout_editor_absoluteY="455dp">
+
+
+                <Button
+                    android:id="@+id/btnGuardarUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="#FF735C"
+                    android:text="Guardar"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/btnCancelarReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#FF735C"
+                    android:text="Cancelar"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
