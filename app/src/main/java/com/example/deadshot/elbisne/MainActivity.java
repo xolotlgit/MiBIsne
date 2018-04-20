@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                     @Override
                     public void onResponse(String s) {
                         Log.d("onResponse",s);
-                        //Toast.makeText(MainActivity.this,"Token Actualizado",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this,"Token Actualizado",Toast.LENGTH_LONG).show();
                     }
                 },
                 new Response.ErrorListener() {
@@ -347,7 +347,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 //Creación de parámetros
                 Map<String,String> params = new Hashtable<String, String>();
                 //Agregando de parámetros
-                params.put("token", token);
+                params.put("token", MiFirebaseInstanceIdService.token);
                 params.put("IdUsuario", MainActivity.emailActivo);
                 //Parámetros de retorno
                 return params;

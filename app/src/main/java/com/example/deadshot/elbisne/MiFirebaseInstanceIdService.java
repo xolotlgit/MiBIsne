@@ -22,12 +22,12 @@ public class MiFirebaseInstanceIdService extends FirebaseInstanceIdService {
 
     public static final String TAG = "NOTICIAS";
     String UPLOAD_URL = MainActivity.RutaWeb;
-
+    public static String token;
     @Override
     public void onTokenRefresh() {
         super.onTokenRefresh();
 
-        String token = FirebaseInstanceId.getInstance().getToken();
+        token = FirebaseInstanceId.getInstance().getToken();
 
         Log.d(TAG, "Token: " + token);
         enviarTokenAlServidor(token);
@@ -39,7 +39,7 @@ public class MiFirebaseInstanceIdService extends FirebaseInstanceIdService {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String s) {
-                        Log.d("onResponse",s);
+                        Log.d("on response token",s);
                     }
                 },
                 new Response.ErrorListener() {
