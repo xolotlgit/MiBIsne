@@ -273,7 +273,7 @@ public class ActivityInicioSesion extends AppCompatActivity implements GoogleApi
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Log.w(TAG, "signInWithEmail", task.getException());
-                            Toast.makeText(ActivityInicioSesion.this, "Error de Autenticacion.",
+                            Toast.makeText(ActivityInicioSesion.this, "Correo o contraseña incorrecta",
                                     Toast.LENGTH_SHORT).show();
                             loading.dismiss();
                         }

@@ -81,7 +81,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_weight="1"
                     android:background="#29AB40"
-                    android:text="Iniciar Sesión" />
+                    android:text="Iniciar Sesión"
+                    android:textAllCaps="false"
+                    />
 
                 <com.google.android.gms.common.SignInButton
                     android:id="@+id/signInButton"
