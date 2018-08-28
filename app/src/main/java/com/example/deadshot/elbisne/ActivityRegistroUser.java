@@ -219,7 +219,7 @@ public class ActivityRegistroUser extends AppCompatActivity {
                                     overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                                     finish();
                                 } else{
-                                    Toast.makeText(ActivityRegistroUser.this, "Ha Ocurrido Un Error Intentalo Mas Tarde", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ActivityRegistroUser.this, "El correo ya se encuentra registrado", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }
