@@ -556,7 +556,7 @@ public class FragmentPerfil extends Fragment {
                                         Imagen1=newUrl;
                                         //Agrega el registro actual al ArrayList del anuncio
                                         negocios.add(new UserNegocio(IdNegocio,Nombre_Negocio,Descripcion,Fech_Ini_Suscrip,Fech_Fin_Suscrip,Imagen1));
-                                        Log.d("Valor Actual Enviado id ",IdNegocio+ " nombre " + Nombre_Negocio+ "fecha Ini " + Fech_Ini_Suscrip+ " Fech Fin " + Fech_Fin_Suscrip+ " URL "+Imagen1);
+                                        Log.d("Valor Actual Enviado id",IdNegocio+ " nombre " + Nombre_Negocio+ "fecha Ini " + Fech_Ini_Suscrip+ " Fech Fin " + Fech_Fin_Suscrip+ " URL "+Imagen1);
                                     }//End if 5
                                 }//End del Recorrido de Arreglo Contenido por cada Row
                             }//End Elimina ]
