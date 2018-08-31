@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "454352174040-3cq6p3s8n6qb1ksmcounguk4vd078n0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deadshot.elbisne",
+            "certificate_hash": "de89fd8bc61ebb592ff73bdb913abea994d6215d"
+          }
+        },
+        {
           "client_id": "454352174040-lfjvsh0k5dmps859agaeqdm46e73pbft.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -100,10 +100,12 @@ public class ActivityInicioSesion extends AppCompatActivity implements GoogleApi
 
         callbackManager = CallbackManager.Factory.create();
         loginButton = (LoginButton)findViewById(R.id.loginButton);
-        loginButton.setReadPermissions(Arrays.asList("email"));
+        //Agregue nuevos permisos aparte del correo electrónico
+        loginButton.setReadPermissions(Arrays.asList("email", "public_profile", "user_friends"));
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
+
                 handleFacebookAccessToken(loginResult.getAccessToken());
             }
 
@@ -114,7 +116,8 @@ public class ActivityInicioSesion extends AppCompatActivity implements GoogleApi
 
             @Override
             public void onError(FacebookException error) {
-                Toast.makeText(getApplicationContext(), "Ha ocurrido un error intentalo mas tarde", Toast.LENGTH_LONG).show();
+                Toast.makeText(ActivityInicioSesion.this,""+error,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Ha ocurrido un error intentalo mas tarde", Toast.LENGTH_LONG).show();
             }
         });
         //END Elementos del Layoud
@@ -290,6 +293,8 @@ public class ActivityInicioSesion extends AppCompatActivity implements GoogleApi
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+
+
         if (requestCode == SIGN_IN_CODE) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             handleSignInResult(result);
@@ -299,6 +304,7 @@ public class ActivityInicioSesion extends AppCompatActivity implements GoogleApi
     }
 
     private void handleSignInResult(GoogleSignInResult result) {
+        //Toast.makeText(ActivityInicioSesion.this,"-- "+result.getStatus(),Toast.LENGTH_LONG).show();
         if (result.isSuccess()) {
             firebaseAuthWithGoogle(result.getSignInAccount());
         } else {
