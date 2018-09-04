@@ -100,7 +100,7 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginTop="8dp"
                             android:hint="Fecha de inicio de suscripción"
-                            android:textColorHint="@color/colorPrimary">
+                            android:textColorHint="@color/txt_negro_secundario">
 
                             <android.support.design.widget.TextInputEditText
                                 android:id="@+id/txtFechInicio"
@@ -108,14 +108,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
                                 android:layout_marginTop="8dp"
-                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:backgroundTint="@color/txt_negro_secundario"
                                 android:inputType="date"
                                 android:focusable="false"
                                 android:enabled="false"
                                 android:cursorVisible="false"
                                 android:text="01/Febrero/2018"
                                 android:textColor="@android:color/black"
-                                android:textColorHighlight="@color/colorPrimary" />
+                                android:textColorHighlight="@color/txt_negro_secundario" />
                         </android.support.design.widget.TextInputLayout>
 
                         <android.support.design.widget.TextInputLayout
@@ -124,7 +124,7 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginTop="8dp"
                             android:hint="Fecha termino de suscripción"
-                            android:textColorHint="@color/colorPrimary">
+                            android:textColorHint="@color/txt_negro_secundario">
 
                             <android.support.design.widget.TextInputEditText
                                 android:id="@+id/txtFechFin"
@@ -132,7 +132,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
                                 android:layout_marginTop="8dp"
-                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:backgroundTint="@color/txt_negro_secundario"
                                 android:inputType="date"
                                 android:focusable="false"
                                 android:enabled="false"
@@ -150,7 +150,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:id="@+id/btnDetallesNegocio"
-                    android:background="#DA6555"
+                    android:background="@color/btn_verde"
+                    android:textColor="@color/txt_blanco"
                     android:text="Consultar Más Detalles"/>
 
             </LinearLayout>

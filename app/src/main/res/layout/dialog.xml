@@ -73,9 +73,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:background="@drawable/btn_contorno"
             android:text="Continuar"
-            android:textColor="#FF735C"/>
+            android:textColor="@color/btn_verde"/>
 
         <Button
             android:id="@+id/btnLlamarAdmin"
@@ -83,9 +83,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:background="@color/btn_verde"
             android:text="Llamar a Administrador"
-            android:textColor="#FF735C" />
+            android:textColor="@color/txt_blanco" />
     </LinearLayout>
 
 </LinearLayout>

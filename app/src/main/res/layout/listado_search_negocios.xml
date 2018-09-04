@@ -62,6 +62,7 @@
             <Button
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:textColor="@color/colorPrimary"
+                android:background="@drawable/btn_contorno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ver Detalles"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DA443F"
+    android:background="@color/fondo_gris"
     tools:context="com.example.deadshot.elbisne.ActivityInicioSesion">
 
     <LinearLayout
@@ -43,13 +43,13 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Correo Electrónico"
-                android:textColor="#FFFFFF"
+                android:hint="Correo electrónico"
+                android:textColor="@color/txt_negro"
                 android:textSize="20dp"
-                android:drawableLeft="@drawable/ic_action_email2"
+                android:drawableLeft="@drawable/icons_email"
                 android:inputType="textEmailAddress"
                 android:textAlignment="center"
-                android:textColorHint="#BFBFBF" />
+                android:textColorHint="@color/txt_negro_secundario" />
 
             <EditText
                 android:id="@+id/txtContIniS"
@@ -58,13 +58,13 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:ems="10"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/txt_negro"
                 android:hint="****************"
                 android:textSize="20dp"
                 android:inputType="textPassword"
-                android:drawableLeft="@drawable/ic_action_paswoord"
+                android:drawableLeft="@drawable/icons_pass"
                 android:textAlignment="center"
-                android:textColorHint="#BFBFBF"/>
+                android:textColorHint="@color/txt_negro_secundario"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
                     android:layout_weight="1"
-                    android:background="#29AB40"
+                    android:background="@color/btn_verde"
                     android:text="Iniciar Sesión"
                     android:textAllCaps="false"
                     />
@@ -118,6 +118,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
+                    android:textColor="@color/txt_negro_secundario"
                     android:text="Registrate ahora" />
 
             </LinearLayout>

@@ -67,7 +67,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:textSize="25dp"
-                                        android:text="Nombre del negocio" />
+                                        android:text="Nombre del negocio"
+                                        android:textColor="@color/txt_negro"/>
 
                                 </LinearLayout>
 
@@ -163,21 +164,21 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="15dp"
                                     android:hint="Descripción del negocio"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblDescripcion"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
                                         android:enabled="false"
                                         android:focusable="false"
                                         android:inputType="textMultiLine"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
 
                                 <android.support.design.widget.TextInputLayout
@@ -185,21 +186,21 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="15dp"
                                     android:hint="Nombre de usuario"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblIdUsuario"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
                                         android:enabled="false"
                                         android:focusable="false"
                                         android:inputType="textPersonName"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
 
                                 <android.support.design.widget.TextInputLayout
@@ -208,14 +209,14 @@
                                     android:layout_marginRight="15dp"
                                     android:hint="IdNegocio"
                                     android:visibility="gone"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblIdNegocio"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
                                         android:visibility="gone"
                                         android:enabled="false"
@@ -223,7 +224,7 @@
                                         android:inputType="textPersonName"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
 
                                 <android.support.design.widget.TextInputLayout
@@ -231,21 +232,21 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="15dp"
                                     android:hint="Horarios"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblHorario"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
                                         android:enabled="false"
                                         android:focusable="false"
                                         android:inputType="text"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
 
                             </LinearLayout>
@@ -291,21 +292,21 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="15dp"
                                     android:hint="Dirección del negocio"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblDireccion"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
                                         android:enabled="false"
                                         android:focusable="false"
                                         android:inputType="textMultiLine"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
 
                                 <LinearLayout
@@ -317,12 +318,12 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:layout_width="match_parent"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Ver en Mapa"
+                                        android:text="   Ver en Mapa   "
                                         android:gravity="center"
-                                        android:textColor="#ffffff"
-                                        android:background="#FF735C"
+                                        android:textColor="@color/btn_verde"
+                                        android:background="@drawable/btn_contorno"
                                         android:id="@+id/btnVerMapa"/>
                                 </LinearLayout>
 
@@ -330,14 +331,14 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:hint="Teléfono móvil"
-                                        android:textColorHint="@color/colorPrimary">
+                                        android:textColorHint="@color/txt_negro_secundario">
                                         <android.support.design.widget.TextInputEditText
                                             android:id="@+id/lblTel_M"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginBottom="8dp"
                                             android:layout_marginTop="8dp"
-                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:backgroundTint="@color/txt_negro_secundario"
                                             android:inputType="phone"
                                             android:maxLength="10"
                                             android:cursorVisible="false"
@@ -345,7 +346,7 @@
                                             android:focusable="false"
                                             android:text=""
                                             android:textColor="@android:color/black"
-                                            android:textColorHighlight="@color/colorPrimary" />
+                                            android:textColorHighlight="@color/txt_negro_secundario" />
                                     </android.support.design.widget.TextInputLayout>
 
                                 <LinearLayout
@@ -383,14 +384,14 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:hint="Teléfono fijo"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblTel_F"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:inputType="phone"
                                         android:maxLength="10"
                                         android:cursorVisible="false"
@@ -398,7 +399,7 @@
                                         android:focusable="false"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
 
                                 <LinearLayout
@@ -437,21 +438,21 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="15dp"
                                     android:hint="Correo electrónico del negocio"
-                                    android:textColorHint="@color/colorPrimary">
+                                    android:textColorHint="@color/txt_negro_secundario">
                                     <android.support.design.widget.TextInputEditText
                                         android:id="@+id/lblEmail"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
-                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
                                         android:enabled="false"
                                         android:focusable="false"
                                         android:inputType="textEmailAddress"
                                         android:text=""
                                         android:textColor="@android:color/black"
-                                        android:textColorHighlight="@color/colorPrimary" />
+                                        android:textColorHighlight="@color/txt_negro_secundario" />
                                 </android.support.design.widget.TextInputLayout>
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -524,21 +525,21 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:hint="Sitio Web"
-                                        android:textColorHint="@color/colorPrimary">
+                                        android:textColorHint="@color/txt_negro_secundario">
                                         <android.support.design.widget.TextInputEditText
                                             android:id="@+id/lblSitioWeb"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginBottom="8dp"
                                             android:layout_marginTop="8dp"
-                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:backgroundTint="@color/txt_negro_secundario"
                                             android:cursorVisible="false"
                                             android:enabled="false"
                                             android:focusable="false"
                                             android:inputType="text"
                                             android:text=""
                                             android:textColor="@android:color/black"
-                                            android:textColorHighlight="@color/colorPrimary" />
+                                            android:textColorHighlight="@color/txt_negro_secundario" />
                                     </android.support.design.widget.TextInputLayout>
 
                                     <android.support.design.widget.TextInputLayout
@@ -546,21 +547,21 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:hint="Facebook"
-                                        android:textColorHint="@color/colorPrimary">
+                                        android:textColorHint="@color/txt_negro_secundario">
                                         <android.support.design.widget.TextInputEditText
                                             android:id="@+id/lblFacebook"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginBottom="8dp"
                                             android:layout_marginTop="8dp"
-                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:backgroundTint="@color/txt_negro_secundario"
                                             android:cursorVisible="false"
                                             android:enabled="false"
                                             android:focusable="false"
                                             android:inputType="text"
                                             android:text=""
                                             android:textColor="@android:color/black"
-                                            android:textColorHighlight="@color/colorPrimary" />
+                                            android:textColorHighlight="@color/txt_negro_secundario" />
                                     </android.support.design.widget.TextInputLayout>
 
                                     <android.support.design.widget.TextInputLayout
@@ -568,21 +569,21 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:hint="Twitter"
-                                        android:textColorHint="@color/colorPrimary">
+                                        android:textColorHint="@color/txt_negro_secundario">
                                         <android.support.design.widget.TextInputEditText
                                             android:id="@+id/lblTwitter"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginBottom="8dp"
                                             android:layout_marginTop="8dp"
-                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:backgroundTint="@color/txt_negro_secundario"
                                             android:cursorVisible="false"
                                             android:enabled="false"
                                             android:focusable="false"
                                             android:inputType="text"
                                             android:text=""
                                             android:textColor="@android:color/black"
-                                            android:textColorHighlight="@color/colorPrimary" />
+                                            android:textColorHighlight="@color/txt_negro_secundario" />
                                     </android.support.design.widget.TextInputLayout>
 
                                     <android.support.design.widget.TextInputLayout
@@ -590,21 +591,21 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:hint="Instagram"
-                                        android:textColorHint="@color/colorPrimary">
+                                        android:textColorHint="@color/txt_negro_secundario">
                                         <android.support.design.widget.TextInputEditText
                                             android:id="@+id/lblInstagram"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginBottom="8dp"
                                             android:layout_marginTop="8dp"
-                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:backgroundTint="@color/txt_negro_secundario"
                                             android:cursorVisible="false"
                                             android:enabled="false"
                                             android:focusable="false"
                                             android:inputType="text"
                                             android:text=""
                                             android:textColor="@android:color/black"
-                                            android:textColorHighlight="@color/colorPrimary" />
+                                            android:textColorHighlight="@color/txt_negro_secundario" />
                                     </android.support.design.widget.TextInputLayout>
 
                                     <android.support.design.widget.TextInputLayout
@@ -612,21 +613,21 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:hint="Otra red social"
-                                        android:textColorHint="@color/colorPrimary">
+                                        android:textColorHint="@color/txt_negro_secundario">
                                         <android.support.design.widget.TextInputEditText
                                             android:id="@+id/lblOtraRed"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginBottom="8dp"
                                             android:layout_marginTop="8dp"
-                                            android:backgroundTint="@color/colorPrimaryDark"
+                                            android:backgroundTint="@color/txt_negro_secundario"
                                             android:cursorVisible="false"
                                             android:enabled="false"
                                             android:focusable="false"
                                             android:inputType="text"
                                             android:text=""
                                             android:textColor="@android:color/black"
-                                            android:textColorHighlight="@color/colorPrimary" />
+                                            android:textColorHighlight="@color/txt_negro_secundario" />
                                     </android.support.design.widget.TextInputLayout>
 
                                 </LinearLayout>

@@ -105,7 +105,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
 
                        <TextView
                             android:layout_width="match_parent"
@@ -129,7 +130,7 @@
 
                     </LinearLayout>
                     <Button
-                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:background="@drawable/btn_contorno"
                         android:textColor="@color/colorPrimary"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

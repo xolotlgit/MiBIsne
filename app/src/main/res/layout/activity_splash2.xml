@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#DA443F"
+    android:background="@color/fondo_gris"
     tools:context="com.example.deadshot.elbisne.ActivitySplash">
 
     <ImageView
