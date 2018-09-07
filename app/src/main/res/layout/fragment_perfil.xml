@@ -233,7 +233,8 @@
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:visibility="visible"
-                                    android:padding="5dp">
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp">
 
                                     <android.support.design.widget.TextInputLayout
                                         android:layout_width="match_parent"
@@ -328,7 +329,8 @@
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:visibility="gone"
-                                    android:padding="5dp">
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp">
 
                                     <android.support.design.widget.TextInputLayout
                                         android:layout_width="match_parent"
@@ -427,7 +429,7 @@
                                     android:id="@+id/contenedorsavecancel"
                                     android:gravity="center_horizontal"
                                     android:visibility="gone"
-                                    android:layout_marginBottom="10dp">
+                                    android:paddingBottom="3dp">
 
                                     <Button
                                         android:id="@+id/btnCancelarDatosPerfil"

@@ -28,6 +28,7 @@
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
                 android:layout_width="255dp"
                 android:layout_height="wrap_content"
                 android:hint="Nombre de contacto"
