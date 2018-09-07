@@ -204,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@color/btn_verde"
+                    android:background="@drawable/btn_normal"
                     android:text="Guardar"
                     android:textColor="@color/txt_blanco"/>
 

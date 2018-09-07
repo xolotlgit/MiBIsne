@@ -10,15 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardBackgroundColor="@android:color/white"
-        card_view:cardCornerRadius="4dp"
+        card_view:cardCornerRadius="30px"
         card_view:cardElevation="4dp"
-        card_view:cardUseCompatPadding="true">
+        card_view:cardUseCompatPadding="true"
+        >
 
         <LinearLayout
             android:id="@+id/linearLayoutCardContentNego"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -150,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:id="@+id/btnDetallesNegocio"
-                    android:background="@color/btn_verde"
+                    android:background="@drawable/btn_normal"
                     android:textColor="@color/txt_blanco"
                     android:text="Consultar Más Detalles"/>
 

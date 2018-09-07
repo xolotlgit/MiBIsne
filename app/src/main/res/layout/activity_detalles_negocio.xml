@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     card_view:cardBackgroundColor="@android:color/white"
-                    card_view:cardCornerRadius="4dp"
+                    card_view:cardCornerRadius="30px"
                     card_view:cardElevation="4dp"
                     card_view:cardUseCompatPadding="true">
 
@@ -125,7 +126,7 @@
                                     android:text="Compartir"
                                     android:layout_margin="5dp"
                                     android:textColor="@color/textColorPrimary"
-                                    android:background="@color/btn_verde"/>
+                                    android:background="@drawable/btn_normal"/>
                             <RatingBar
                                 android:id="@+id/ratingBar"
                                 android:layout_width="wrap_content"
@@ -151,7 +152,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@layout/border"
                                 android:orientation="horizontal"
-                                android:padding="8dp">
+                                android:padding="8dp"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -161,7 +163,8 @@
                                     android:gravity="center_vertical"
                                     android:text="Datos Generales"
                                     android:textColor="@android:color/black"
-                                    android:textSize="20sp" />
+                                    android:textSize="20sp"
+                                    />
 
                                 <ImageView
                                     android:id="@+id/imageViewExpand1"
@@ -347,7 +350,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@layout/border"
                                 android:orientation="horizontal"
-                                android:padding="8dp">
+                                android:padding="8dp"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -357,7 +361,8 @@
                                     android:gravity="center_vertical"
                                     android:text="Datos de Contacto"
                                     android:textColor="@android:color/black"
-                                    android:textSize="20sp" />
+                                    android:textSize="20sp"
+                                    />
 
                                 <ImageView
                                     android:id="@+id/imageViewExpand2"
@@ -472,7 +477,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@layout/border"
                                 android:orientation="horizontal"
-                                android:padding="8dp">
+                                android:padding="8dp"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -482,7 +488,9 @@
                                     android:gravity="center_vertical"
                                     android:text="Datos de Redes Sociales"
                                     android:textColor="@android:color/black"
-                                    android:textSize="20sp" />
+                                    android:textSize="20sp"
+
+                                    />
 
                                 <ImageView
                                     android:id="@+id/imageViewExpand3"
@@ -627,13 +635,13 @@
                         </LinearLayout>
                         <Button
                             android:id="@+id/btnEditarDatosNegocio"
-                            android:background="@color/btn_verde"
+                            android:background="@drawable/btn_normal"
                             android:gravity="right|center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:text="Editar Datos"
+                            android:text="Editar Información"
                             android:textAlignment="center"
                             android:visibility="visible"
                             android:textColor="@color/txt_blanco"/>
@@ -790,7 +798,8 @@
                                     android:gravity="center_vertical"
                                     android:text="Datos de Contacto"
                                     android:textColor="@android:color/black"
-                                    android:textSize="20sp" />
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"/>
 
                                 <ImageView
                                     android:id="@+id/imageViewExpand22"
@@ -1045,7 +1054,7 @@
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="right"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
                                 android:background="@drawable/btn_contorno"
                                 android:gravity="right|center"
                                 android:padding="5dp"
@@ -1061,10 +1070,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="right"
                                 android:layout_marginRight="10dp"
-                                android:background="@color/btn_verde"
+                                android:background="@drawable/btn_normal"
                                 android:gravity="right|center"
                                 android:padding="5dp"
-                                android:text="Guardar Datos"
+                                android:text="Guardar"
                                 android:textColor="@color/txt_blanco"
                                 android:textAlignment="center"
                                 android:visibility="visible" />

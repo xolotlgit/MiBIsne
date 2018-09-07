@@ -144,7 +144,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@color/btn_verde"
+                    android:background="@drawable/btn_normal"
                     android:text="@string/ContRegistro2"
                     android:textColor="@color/txt_blanco" />
             </LinearLayout>

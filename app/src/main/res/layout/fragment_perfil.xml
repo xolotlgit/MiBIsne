@@ -27,9 +27,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         card_view:cardBackgroundColor="@android:color/white"
-                        card_view:cardCornerRadius="4dp"
+                        card_view:cardCornerRadius="30px"
                         card_view:cardElevation="4dp"
-                        card_view:cardUseCompatPadding="true">
+                        card_view:cardUseCompatPadding="true"
+                        >
 
                         <LinearLayout
                             android:id="@+id/linearLayoutCardContent"
@@ -207,7 +208,8 @@
                                     android:gravity="center_vertical"
                                     android:text="@string/detaller"
                                     android:textColor="@android:color/black"
-                                    android:textSize="20sp" />
+                                    android:textSize="20sp"
+                                    />
 
                                 <ImageView
                                     android:id="@+id/imageViewExpand"
@@ -408,7 +410,7 @@
 
                                 <Button
                                     android:id="@+id/btnEditarDatosPerfil"
-                                    android:background="@color/btn_verde"
+                                    android:background="@drawable/btn_normal"
                                     android:textColor="@color/txt_blanco"
                                     android:gravity="right|center"
                                     android:layout_width="match_parent"
@@ -447,7 +449,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="right"
                                         android:layout_marginRight="10dp"
-                                        android:background="@color/btn_verde"
+                                        android:background="@drawable/btn_normal"
                                         android:textColor="@color/txt_blanco"
                                         android:gravity="right|center"
                                         android:padding="5dp"
@@ -483,7 +485,7 @@
                         android:id="@+id/btnStarRegistroNegocio"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/btn_verde"
+                        android:background="@drawable/btn_normal"
                         android:textColor="@color/txt_blanco"
                         android:gravity="center"
                         android:padding="5dp"

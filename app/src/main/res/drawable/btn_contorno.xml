@@ -6,6 +6,7 @@
     android:dashWidth="4dp"
     android:dashGap="4dp">
 </stroke>
+<corners android:radius="30px"/>
 </shape>
 
 

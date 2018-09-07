@@ -39,7 +39,8 @@
                         android:id="@+id/linearLayoutCardContent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        app:cardCornerRadius="30px">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -130,7 +131,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@layout/border"
                                 android:orientation="horizontal"
-                                android:padding="8dp">
+                                android:padding="8dp"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -258,7 +260,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@layout/border"
                                 android:orientation="horizontal"
-                                android:padding="8dp">
+                                android:padding="8dp"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -283,7 +286,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginLeft="8dp"
                                 android:orientation="vertical"
                                 android:visibility="gone">
 
@@ -297,7 +299,6 @@
                                         android:id="@+id/lblDireccion"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginBottom="8dp"
                                         android:layout_marginTop="8dp"
                                         android:backgroundTint="@color/txt_negro_secundario"
                                         android:cursorVisible="false"
@@ -318,13 +319,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:layout_width="wrap_content"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="   Ver en Mapa   "
+                                        android:text="Ver en mapa"
                                         android:gravity="center"
                                         android:textColor="@color/btn_verde"
                                         android:background="@drawable/btn_contorno"
-                                        android:id="@+id/btnVerMapa"/>
+                                        android:id="@+id/btnVerMapa"
+                                        android:drawableTop="@drawable/mapadeubicacion" />
                                 </LinearLayout>
 
                                 <android.support.design.widget.TextInputLayout
@@ -362,22 +364,30 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Llamar"
-                                        android:gravity="center"
                                         android:textColor="#525355"
-                                        android:background="#dddddd"
+                                        android:background="@drawable/btn_simple"
                                         android:layout_weight="1"
                                         android:layout_marginRight="1dp"
-                                        android:id="@+id/btnLlamarTelM"/>
+                                        android:id="@+id/btnLlamarTelM"
+                                        android:drawableLeft="@drawable/llamada_telefonica"
+                                        android:gravity="left|center_vertical"
+                                        android:paddingLeft="30dp"
+                                        android:drawablePadding="7dp"
+
+                                        />
                                     <Button
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Enviar Mensaje"
-                                        android:gravity="center"
+                                        android:text="Mensaje"
                                         android:textColor="#525355"
-                                        android:background="#dddddd"
+                                        android:background="@drawable/btn_simple"
                                         android:layout_weight="1"
                                         android:layout_marginLeft="1dp"
-                                        android:id="@+id/btnMensajeTelM"/>
+                                        android:id="@+id/btnMensajeTelM"
+                                        android:drawableLeft="@drawable/message"
+                                        android:gravity="left|center_vertical"
+                                        android:paddingLeft="30dp"
+                                        android:drawablePadding="7dp"/>
                                 </LinearLayout>
 
                                 <android.support.design.widget.TextInputLayout
@@ -415,22 +425,28 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Llamar"
-                                        android:gravity="center"
                                         android:textColor="#525355"
-                                        android:background="#dddddd"
+                                        android:background="@drawable/btn_simple"
                                         android:layout_weight="1"
                                         android:layout_marginRight="1dp"
-                                        android:id="@+id/btnLlamarTelF"/>
+                                        android:id="@+id/btnLlamarTelF"
+                                        android:drawableLeft="@drawable/llamada_telefonica"
+                                        android:gravity="left|center_vertical"
+                                        android:paddingLeft="30dp"
+                                        android:drawablePadding="7dp"/>
                                     <Button
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Enviar Mensaje"
-                                        android:gravity="center"
+                                        android:text="Mensaje"
                                         android:textColor="#525355"
-                                        android:background="#dddddd"
+                                        android:background="@drawable/btn_simple"
                                         android:layout_weight="1"
                                         android:layout_marginLeft="1dp"
-                                        android:id="@+id/btnMensajeTelF"/>
+                                        android:id="@+id/btnMensajeTelF"
+                                        android:drawableLeft="@drawable/message"
+                                        android:gravity="left|center_vertical"
+                                        android:paddingLeft="30dp"
+                                        android:drawablePadding="7dp"/>
                                 </LinearLayout>
 
                                 <android.support.design.widget.TextInputLayout
@@ -466,13 +482,16 @@
                                     <Button
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Enviar Correo Electrónico"
-                                        android:gravity="center"
+                                        android:text="Correo Electrónico"
                                         android:textColor="#525355"
-                                        android:background="#dddddd"
+                                        android:background="@drawable/btn_simple"
                                         android:layout_weight="1"
                                         android:layout_marginRight="1dp"
-                                        android:id="@+id/btnCorreoElect"/>
+                                        android:id="@+id/btnCorreoElect"
+                                        android:drawableLeft="@drawable/email"
+                                        android:gravity="left|center_vertical"
+                                        android:paddingLeft="65dp"
+                                        android:drawablePadding="7dp"/>
                                 </LinearLayout>
                             </LinearLayout>
                             <!-- END Linear para DEtalles Contacto-->
@@ -483,7 +502,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@layout/border"
                                 android:orientation="horizontal"
-                                android:padding="8dp">
+                                android:padding="8dp"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="0dp"
